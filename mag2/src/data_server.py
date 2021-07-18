@@ -11,8 +11,9 @@ CORS(app)
 
 @app.route("/random_number")
 def random_number():
-    data = {'name': 'test'}
-    return jsonify(data), 200
+    """random_number - endpoint
+    """
+    return jsonify({'name': random.random()}), 200
 
 
 if __name__ == "__main__":
